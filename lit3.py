@@ -10,6 +10,6 @@ r.columns= range(1980,2026)
 
 fig = px.funnel(r)
 
-st.subheader('TX Acre-weighted precip (in./mo.)')
+st.subheader('TX cotton acre-weighted cumulative precipitation (in.)')
 
 st.plotly_chart(fig)
