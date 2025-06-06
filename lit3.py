@@ -10,4 +10,6 @@ r.columns= range(1980,2026)
 
 fig = px.funnel(r)
 
+st.subtitle('TX Acre-weighted precip (in./mo.)')
+
 st.plotly_chart(fig)
