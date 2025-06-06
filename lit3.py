@@ -6,7 +6,7 @@ r = pd.read_csv(r'rain.csv', header=None)
 
 r.set_index(0, inplace=True)
 
-r.columns= range(1980,2026)
+r.columns= range(2000,2026)
 
 fig = px.funnel(r)
 
