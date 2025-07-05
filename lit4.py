@@ -28,8 +28,6 @@ client.retrieve(
 euro = xr.open_dataset(filename, engine='cfgrib')
 #%%
 
-counties = gpd.read_file(r'https://gist.githubusercontent.com/sdwfrost/d1c73f91dd9d175998ed166eb216994a/raw/e89c35f308cee7e2e5a784e1d3afc5d449e9e4bb/counties.geojson')
-
 #%%
 x = hvplot.show(
     (euro['tp']*39.37).hvplot(height=600, width=1250, coastline=True, features={'states':'50m'})
