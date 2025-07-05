@@ -2,3 +2,4 @@ plotly.express
 streamlit_bokeh
 xarray
 ecmwf-opendata
+hvplot
