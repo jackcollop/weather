@@ -33,7 +33,8 @@ euro = xr.open_dataset(filename, engine='cfgrib')
 x =  (euro['tp']*39.37).hvplot(coastline=True, features={'states':'50m'})
 
 
-streamlit_bokeh(hvplot.render(x),use_container_width=True)
+streamlit_bokeh(hvplot.render(x))
+
 
 
 
