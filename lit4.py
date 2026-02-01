@@ -12,7 +12,6 @@ from bokeh.plotting import figure
 client = Client("ecmwf", beta=False)
 parameters = ['tp']
 filename = 'medium-rain-acc.grib'
-filename
 #%%
 
 client.retrieve(
@@ -35,6 +34,7 @@ x =  (euro['tp']*39.37).hvplot(coastline=True, features={'states':'50m'})
 
 
 streamlit_bokeh(hvplot.render(x),use_container_width=True)
+
 
 
 
