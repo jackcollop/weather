@@ -5,4 +5,3 @@ ecmwf-opendata
 hvplot
 cfgrib
 geoviews
-numpy==1.23.5
