@@ -1,5 +1,5 @@
 plotly.express
-streamlit_bokeh
+streamlit-bokeh
 xarray
 ecmwf-opendata
 hvplot
