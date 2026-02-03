@@ -5,3 +5,4 @@ ecmwf-opendata
 hvplot
 cfgrib
 geoviews
+geopandas
