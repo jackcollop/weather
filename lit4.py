@@ -25,7 +25,7 @@ client.retrieve(
     target=filename
 )
 
-df = pd.read_csv(r'C:\Users\john.collop\Downloads\acres.csv')
+df = pd.read_csv(r'acres.csv')
 #%%
 df.set_index(df.ANSI.astype(str), inplace=True)
 #%%
@@ -49,6 +49,7 @@ x =  (euro['tp']*39.37).hvplot(coastline=True, features={'states':'50m'}) * gv.P
 
 
 streamlit_bokeh(hvplot.render(x), use_container_width=True)
+
 
 
 
