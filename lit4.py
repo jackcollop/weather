@@ -45,10 +45,11 @@ euro = xr.open_dataset(filename, engine='cfgrib')
 #%%
 
 #%%
-x =  (euro['tp']*39.37).hvplot(coastline=True, features={'states':'50m'}, width=1000, height=600) * gv.Polygons(counties[['LOCATION_DESC','VALUE','geometry']]).opts(color='VALUE',alpha=0.25, cmap='kgy')
+x =  (euro['tp']*39.37).hvplot(coastline=True, features={'states':'50m'}) * gv.Polygons(counties[['LOCATION_DESC','VALUE','geometry']]).opts(color='VALUE',alpha=0.25, cmap='kgy')
 
 
 streamlit_bokeh(hvplot.render(x), use_container_width=True)
+
 
 
 
